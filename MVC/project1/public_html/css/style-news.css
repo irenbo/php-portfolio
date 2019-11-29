@@ -1,0 +1,17 @@
+.news-article {
+	margin: 10px auto;
+	padding: 7px 15px;
+}
+
+
+#news:hover {
+	transform: scale(.8, .95);
+	transition: transform 1.3s;
+}
+
+.news-article:hover {
+	  transform: scale(1.7);
+	  transition: transform 1.3s;
+	  background-color: lightgray;
+	  opacity: 0.7;
+}
