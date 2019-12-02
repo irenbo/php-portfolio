@@ -30,7 +30,7 @@ class MainRepository implements Repository
         return $this->db->paramsGetOne($sql, ['id'=>$id], $this->class);
     }
 
-//    public function save($data) //это Шторм автомвтически предложил
+//    public function save($data)
 //    {
 //
 //    }
