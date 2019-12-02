@@ -43,10 +43,10 @@ class UserRepository implements Repository
         ];
         $result = $this->db->paramsGetOne($sql, $params);
         if (!$result) return false;
-        if (!password_verify($post['password'], $result['hash'])) return false; //$post['password'] - это то, что вводит пользователь; $result['hash'] - это то, что хранится в базе. Это валидация данных пользователя. Все данные хранятся в массиве в базе.
-        session_start(); //запускаем сессию и кладем данные в сессию (в массив)
-        $_SESSION['name'] = $result['name']; //в сессию кладем имя
-        $_SESSION['role'] = $result['role']; //в сессию кладем роль
+        if (!password_verify($post['password'], $result['hash'])) return false; 
+        session_start();
+        $_SESSION['name'] = $result['name']; 
+        $_SESSION['role'] = $result['role'];
         return true;
     }
 }
