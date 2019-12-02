@@ -18,7 +18,7 @@ class InfoController extends Controller
 	}
 	
 	public function contactsAction (){
-		// echo "Если надпись видна, то рендеринг работает:)";
+		
 		$content = 'contacts.php';
 		$template = 'template.php';
 		$css = ' ';
