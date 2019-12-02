@@ -11,15 +11,14 @@ class Router
         $params=null;
         $routes=explode('/',$_SERVER['REQUEST_URI']);
 
-        // имя класса контроллера
         if (!empty($routes[1])){
             $controller=$routes[1];
         }
-        //имя метода
+      
         if (!empty($routes[2])){
             $action=$routes[2];
         }
-        //параметры
+        
         if (!empty($routes[3])){
             $params=$routes[3];
         }
@@ -36,9 +35,9 @@ class Router
             echo 'Метод не найден';
             return;
         }
-        $controller = new $controller(); // создаем объект контроллера
+        $controller = new $controller();
 
-        $controller->$action($params); // у созданного объета вызываем метод
+        $controller->$action($params); 
 
     }
 }
