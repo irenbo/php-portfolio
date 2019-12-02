@@ -48,12 +48,6 @@ print_r(camelStyle($str));
 echo "<br><br>";
 echo "Генерация массивов из случайных чисел. Сумма их элементов.";
 
-//rand — Генерирует случайное число
-// print_r — Выводит удобочитаемую информацию о переменной
-//array_sum — Вычисляет сумму значений массива
-//max — Возвращает наибольшее значение
-//array_keys — Возвращает все или некоторое подмножество ключей массива
-
 function gen_arr($arr_length) {
 	for ($i = 0; $i < $arr_length; $i++) {
 		$some_arr[] =  rand(3, 97);
@@ -97,8 +91,7 @@ $str2 = 'быть или не быть: вот в чем вопрос';
 $str3 = 'to be or not to be: that is the question';
 $str4 = 'to be or to do: that is the answer';
 $str5 = 'abrakadabra абракадабра';
-//$res = similar_text($str1, $str2, $percent); //Вычисляет степень похожести двух строк
-//echo "Степень совпадений: $percent %";
+
 
  function checkSimilar($text1, $text2) {
  	$res = similar_text($text1, $text2, $percent); 
