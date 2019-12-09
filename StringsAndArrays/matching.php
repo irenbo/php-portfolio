@@ -1,6 +1,6 @@
 <?php 
 /*Функции для работы со строками*/
-echo "Функция выделяет из сто имя файла без расширения.<br>";
+echo "Функция выделяет из строки имя файла без расширения.<br>";
 /*(например, 'C:\OpenServer\testsite\www\someFile.txt')*/
 
 $str = 'C:\OpenServer\testsite\www\someFile.txt';
